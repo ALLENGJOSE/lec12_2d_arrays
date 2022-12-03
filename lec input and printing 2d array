@@ -1,0 +1,29 @@
+package lec12_2d_arrays;
+
+import java.util.Scanner;
+
+public class Input2darrays {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter number of rows");
+		int rows = s.nextInt();
+		System.out.println();
+		System.out.println("Enter number of colums");
+		int columns = s.nextInt();
+		int input[][] = new int[rows][columns];
+		for(int i = 0 ;i < rows ; i++ ) {
+			for(int j = 0 ; j < columns ; j++) {
+				System.out.println("Enter element at "+i+" row "+j+" column");
+				input[i][j] = s.nextInt();
+			}
+		}
+		for(int i =0; i < rows ; i++) {
+			for(int j =0; j < columns ; j++) {
+				System.out.print(input[i][j] + " ");
+			}
+			System.out.println();
+	}
+}
+}
